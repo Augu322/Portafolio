@@ -1,0 +1,398 @@
+.Skills{
+    .html, .css, .js, .bootstrap, .sass, .git, .github, .responsive, .photoshop{
+        width:15%;
+        height:200px;
+        border-radius:20px;
+        transition:all 0.5s ease;
+
+        img{
+            margin:30px 25px;
+        }
+    }
+   
+
+    .html{
+        border:1px solid #FF6D00;
+        &:hover{
+            background-color:#FF6D00;
+            transform:scale(1.1);
+        }
+    }
+    .css{
+        border:1px solid #039BE5;
+        &:hover{
+            background-color:#039BE5;
+            transform:scale(1.1);
+        }
+    }
+    .js{
+        border:1px solid #fae442;
+        &:hover{
+            background-color:#f7de1e;
+            transform:scale(1.1);
+        }
+    }
+    .bootstrap{
+        border:1px solid #543B79;
+        &:hover{
+            background-color:#7b54b4;
+            transform:scale(1.1);
+        }
+        img{
+            width:56%;
+            padding-top:18px;
+            padding-left:20px;
+        }
+    }
+    .sass{
+        border:1px solid #F06292;
+        &:hover{
+            background-color:#F06292;
+            transform:scale(1.1);
+        }
+    }
+    .git{
+        border:1px solid #ffa126;
+     
+        &:hover{
+            background-color:#ffa126;
+            transform:scale(1.1);
+        }
+    }
+    .github{
+        border:1px solid #161616;
+        &:hover{
+            background-color:#323332;
+            transform:scale(1.1);
+        }
+    }
+    .responsive{
+        border:1px solid #57606F;
+        &:hover{
+            background-color:#57606F;
+            transform:scale(1.1);
+        }
+        img{
+            width:50%;
+            padding-top:22px;
+            padding-left:25px;
+        }
+    }
+    .photoshop{
+        border:1px solid #03A9F4;
+        &:hover{
+            background-color: #039BE5;
+            transform: scale(1.1);
+        }
+    }
+}
+
+
+
+
+
+
+
+.Softskills{
+    &__business, &__team, &__comunication{
+    width:20%;
+    height:250px;
+    border-radius:20px;
+    border:1px solid #ffffff;
+    transition: all 0.5s ease;
+
+    &:hover{
+        transform:scale(1.1);
+    }
+    img{
+        margin:70px 85px;
+    }
+
+    h3{
+        font-size:$md-little;
+        text-align: center;
+        font-family:$open;
+        position: relative;
+        color:rgb(148, 148, 148);
+        bottom:45px;
+        margin-bottom:100px;
+    }
+    }
+
+}
+
+
+
+
+
+.hobbies{
+    &__futbol, &__read, &__draw, &__run, &__music, &__game{
+        width:20%;
+        height:250px;
+        border-radius:20px;
+        transition:all 0.5s ease;
+        border:1px solid #a8a8a8;
+        transition: all 0.5s ease;
+
+        img{
+            margin:70px 85px;
+        }
+
+        h3{
+            font-size:$md-little;
+            text-align: center;
+            font-family:$open;
+            position: relative;
+            bottom:45px;
+            color:rgb(148, 148, 148);
+        }
+
+        &:hover{
+            transform:scale(1.1);
+        }
+    }
+}
+
+
+
+
+.formacion{
+    &__academica{
+        width:100%;
+        text-align: center;
+        padding-top:30px;
+        font-family:$open;
+        font-size:$sm;
+        color: antiquewhite;
+    }
+    &__oda, &__alura{
+        width:20%;
+        height:200px;
+        position: relative;
+        bottom:100px;
+        border-radius:20px;
+        background-color: antiquewhite;
+        border:1px solid white;
+    }
+    &__oda{
+        img{
+            width:40%;
+            padding:20px 0 0 80px;
+        }
+
+        
+    }
+    &__alura{
+        img{
+            width:65%;
+            padding:40px 0 0 45px;
+        }
+    }
+}
+
+
+//? Proyectos
+
+.proyectos{
+    &__encriptador, &__page{
+       width:30%;
+       height:400px;
+       border-radius:20px;
+       border:2px solid rgb(124, 124, 124);
+       background-color: #323332;
+       transition: all 0.5s ease;
+       cursor: pointer;
+
+       &:hover{
+        border:2px solid white;
+        background-color: #32333262;
+       }
+
+       img{
+        width:100%;
+        height:230px;
+        border-radius:20px 20px 0 0;
+        
+       }
+    }
+    &__title{
+        text-align: center;
+        font-family:$open;
+        color: antiquewhite;
+       }
+
+}
+
+
+
+
+
+
+@media screen and (max-width:770px){
+    .Skills{
+        margin-top:5px;
+        .html, .css, .js, .bootstrap, .sass, .git, .github, .responsive, .photoshop{
+            width:25%;
+
+            img{
+               margin:30px 21px;
+            }
+        }
+    }
+
+    .Softskills{
+        &__business, &__team, &__comunication{
+            width:25%;
+
+            img{
+                margin:60px 45px;
+            }
+            h3{
+                font-size:$little;
+            }
+        }
+    }
+
+    .hobbies{
+        &__futbol, &__read, &__draw, &__run, &__music, &__game{
+            width:25%;
+
+            img{
+                margin:60px 45px;
+            }
+
+            h3{
+                font-size:$little;
+            }
+            
+        }
+    }
+
+    .formacion{
+        &__oda, &__alura{
+            width:30%;
+        }
+
+        &__oda{
+            img{
+                padding:30px 0 0 70px;
+            }
+        }
+        &__alura{
+            img{
+                padding:50px 0 0 40px;
+            }
+        }
+    }
+    
+
+    .proyectos{
+        &__encriptador, &__page, &__websass{
+            width:50%;
+            height:450px;
+        }
+
+        &__title{
+            margin-top:15px;
+        }
+
+        .btn{
+            margin:50px 0px 0 40px;
+        }
+    }
+  
+}
+
+
+
+
+
+@media screen and (max-width:600px){
+    .Skills{
+        margin-top:5px;
+
+        .html, .css, .js, .bootstrap, .sass, .git, .github, .responsive, .photoshop{
+            width:40%;
+            height:190px;
+    
+            img{
+               margin:20px 5px;
+            }
+        }
+
+        .bootstrap{
+            img{
+                width:70%;
+                height:115px;
+            }
+        }
+
+        .responsive{
+            img{
+                width:70%;
+               margin:25px 0;
+            }
+        }
+}
+
+
+    .Softskills{
+        &__business, &__team, &__comunication{
+           width:40%;
+           height:190px;
+
+        img{
+            margin:35px 30px;
+        }
+        h3{
+            font-size:$little;
+            bottom:20px;
+        }
+    }
+}
+    .hobbies{
+        &__futbol, &__read, &__draw, &__run, &__music, &__game{
+            width:40%;
+            height:190px;
+
+            img{
+                margin:35px 30px;
+            }
+
+            h3{
+               bottom:20px;
+            }
+        }
+    }
+
+
+    .formacion{
+        &__oda, &__alura{
+            width:40%;
+            height:190px;
+        }
+        &__oda{
+            img{
+                padding:30px 0 0 50px;
+                padding-bottom:10px;
+            }
+        }
+        &__alura{
+            img{
+                padding:60px 0 0 30px;
+            }
+        }
+    }
+
+
+
+    .proyectos{
+        &__encriptador, &__page, &__websass{
+            width:90%;
+        }
+
+        .btn{
+            margin:50px 0px 0 30px;
+        }
+    }
+}

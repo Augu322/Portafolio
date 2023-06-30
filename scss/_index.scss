@@ -1,0 +1,409 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+@import "./fonts";
+
+body{
+    background: #0f0c29;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.head{
+   width:100%;
+   height:30rem;
+   background-image:url(../img/code.jpg);
+   background-attachment: fixed;
+   background-size: cover;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+
+  
+
+   &__btn--abrir{
+    display: none;
+}
+
+   &__btn--cerrar{
+    display:none;
+   }
+
+
+   &__list{
+    list-style:none;
+    display: flex;
+    padding-top:20px;
+    height:50px;
+    gap:10rem;
+
+    li a{
+        text-decoration: none;
+        color: white;
+        font-family: $mont;
+        font-weight: bold;
+        transition: all 0.5s ease;
+      
+      
+
+        &:hover{
+            color: aquamarine;
+        }
+    }
+
+   
+
+
+   }
+   &__cont{
+    width:40rem;
+    height:30rem;
+    color: aliceblue;
+    padding-top:50px;
+
+       p{
+        text-align: center;
+        font-size:$medium;
+        font-family: 'Montserrat', sans-serif;
+       }
+
+       h1{
+        text-align: center;
+        padding:10px 0 20px 0;
+        font-size:$md;
+        font-family: 'Geologica', sans-serif;
+       }
+       h3{
+        text-align: center;
+        font-size:$md-little;
+        font-family: 'Montserrat', sans-serif;
+       }
+   }
+
+
+   &__btn{
+    
+    text-align: center;
+    margin-top:50px;
+    
+    a{
+        padding:15px 25px;
+        border-radius:25px;
+        background-color: green;
+        text-decoration: none;
+        color: white;
+        transition: all 0.5s ease;
+
+        font-size:$btn-cv;
+        font-family: $sans;
+
+        &:hover{
+            background-color: rgb(0, 255, 0);
+        }
+    }
+   }
+
+
+
+
+
+}
+
+
+
+
+
+
+
+    
+   
+  
+
+
+//todo - Sobre mi
+
+.sobreMi{
+    width:100%;
+    height:500px;
+    display: flex;
+    box-shadow:
+    0px 1px 0.7px -8px rgba(0, 0, 0, 0.035),
+    0px 2.6px 2px -8px rgba(0, 0, 0, 0.05),
+    0px 6.3px 4.8px -8px rgba(0, 0, 0, 0.065),
+    0px 21px 16px -8px rgba(0, 0, 0, 0.1);
+
+    &__cont{
+        width:60%;
+        height:500px;
+      img{
+        width:75%;
+        height:480px;
+        border-radius:25px;
+        padding-top:10px;
+        margin-left:50px;
+      }
+    }
+
+    
+    &__data{
+        width:100%;
+        height:500px;
+
+        h1{
+            text-align: center;
+            padding:20px 0 0 0;
+            font-family:$open;
+            font-size:$sm;
+            color: aliceblue;
+        }
+    }
+
+    &__datos{
+        display: flex;
+        flex-direction: column;
+        align-items:start;
+        justify-content:start;
+        width:90%;
+        height:125px;
+        padding-top:10px;
+        margin-left:50px;
+
+        p{
+            padding-bottom:15px;
+            font-family:$mont;
+            font-weight: bold;
+            color: aliceblue;
+        }
+    }
+
+    &__bio{
+        width:90%;
+        height:125px;
+        padding-top:20px;
+        margin:0px 0px 50px 50px;
+       
+        
+        h2{
+            font-family: $sans;
+            padding-bottom:10px;
+            color: aliceblue;
+        }
+        p{
+            font-family:$open;
+            color:white;
+        }
+    }
+
+
+    &__redes{
+        height:100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap:30px;
+
+      
+    
+      
+
+        svg{
+            background-color: aquamarine;
+        }
+    }
+   
+}
+
+
+
+.Skills{
+    width:100%;
+    height:60rem;
+    margin-top:10rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:30px;
+    box-sizing: content-box;
+    box-shadow:
+    0px 1.6px 3.6px rgba(0, 0, 0, 0.045),
+    0px 4.5px 10px rgba(0, 0, 0, 0.065),
+    0px 10.9px 24.1px rgba(0, 0, 0, 0.085),
+    0px 36px 80px rgba(0, 0, 0, 0.13);
+   
+    .sk{
+        width:100%;
+        text-align: center;
+        font-family:$skills;
+        font-size:$bt;
+        padding-top:80px;
+        -webkit-text-stroke: 3px white;
+    }
+}
+
+
+
+.Softskills{
+    width:100%;
+    height:600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:50px;
+    box-shadow:
+    0px 1.6px 3.6px rgba(0, 0, 0, 0.045),
+    0px 4.5px 10px rgba(0, 0, 0, 0.065),
+    0px 10.9px 24.1px rgba(0, 0, 0, 0.085),
+    0px 36px 80px rgba(0, 0, 0, 0.13);
+
+    &__soft{
+        width:100%;
+        text-align: center;
+        font-family:$skills;
+        font-size:$bt;
+        padding-top:50px;
+       -webkit-text-stroke: 3px white;
+    }
+}
+
+
+
+
+.hobbies{
+    width:100%;
+    height:60rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:100px;
+    box-shadow:
+    0px 1.6px 3.6px rgba(0, 0, 0, 0.045),
+    0px 4.5px 10px rgba(0, 0, 0, 0.065),
+    0px 10.9px 24.1px rgba(0, 0, 0, 0.085),
+    0px 36px 80px rgba(0, 0, 0, 0.13);
+
+    &__hb{
+        width:100%;
+        text-align: center;
+        font-family:$skills;
+        font-size:$bt;
+        padding-top:50px;
+        -webkit-text-stroke: 3px white;
+    }
+}
+
+
+
+
+
+
+.formacion{
+    width:100%;
+    height:35rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:100px;
+    background-color: #2c2c2c;
+
+  
+
+    /*Oda*/
+    &__title{
+        text-align: center;
+        font-family:$mont;
+    }
+    &__titulo{
+        padding-top:20px;
+        color: rgb(173, 173, 173);
+        font-family: $mont;
+        text-align: center;
+    }
+    &__year{
+        text-align: center;
+        color:rgb(173, 173, 173);
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        padding-top:5px;
+    }
+
+
+    /*Alura*/
+    &__al{
+        padding-top:68px;
+        color: rgb(173, 173, 173);
+        font-family: $mont;
+        text-align: center;
+    }
+}
+
+
+
+
+
+.proyectos{
+    width:100%;
+    height:45rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:100px;
+    box-shadow:
+    0px 1.6px 3.6px rgba(0, 0, 0, 0.045),
+    0px 4.5px 10px rgba(0, 0, 0, 0.065),
+    0px 10.9px 24.1px rgba(0, 0, 0, 0.085),
+    0px 36px 80px rgba(0, 0, 0, 0.13);
+
+
+    &__titulo{
+        width:100%;
+        text-align: center;
+        margin-top:60px;
+        font-family:$open;
+        font-size:$sm;
+        color: antiquewhite;
+        font-size:$medium;
+    }
+}
+
+
+
+
+
+.contact{
+    width:100%;
+    height:900px;
+    background-color: rgba(54, 54, 54, 0.37);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    h2{
+        margin:200px 0 40px 0;
+        padding-top:40px;
+        color: rgb(224, 224, 224);
+        font-family: $open;
+    }
+}
+
+
+
+.footer{
+    width:100%;
+    height:100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0f0c29;
+
+  &__title{
+    text-align: center;
+    font-family:$open;
+    color: rgba(250, 235, 215, 0.541);
+  }
+}
+
+
